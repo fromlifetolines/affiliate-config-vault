@@ -1,0 +1,79 @@
+https://vbshoptrax.com/track/clicks/2652/c627c2bc980227ddfb8aec23d62e9640206b4ddf2aabebf60165b013234652eed671a3ea103a9e71?t=
+```[cite: 11]
+
+至此，你的五大獲利金庫（**蝦皮、樂天、Agoda、Klook、KKday**）已全部拿到真實參數[cite: 7, 9, 10, 11]。
+
+---
+
+【策略邏輯／數據支撐】
+
+有了這五家核心平台，你的 App 已經涵蓋：
+* **日常 3C 與生活用品**：蝦皮購物、台灣樂天市場
+* **高客單價國外住宿**：Agoda
+* **全球熱門景點門票與日韓交通卡**：Klook、KKday
+
+這些全部都由你的 GitHub 私有字典進行遠端中控。
+
+---
+
+【具體執行步驟 (Action Items)】
+
+### 第一步：GitHub `affiliate_rules.json` 最終滿血版存檔
+
+打開 GitHub 儲存庫 `fromlifetolines/affiliate-config-vault`，編輯 `affiliate_rules.json`，把整份換成這份完整正式版：
+
+```json
+{
+  "version": "2026.10.8",
+  "updated_at": "2026-10-15T10:15:00Z",
+  "platforms": {
+    "shopee": {
+      "display_name": "蝦皮購物",
+      "partner_id": "16311630010",
+      "default_commission": 0.06,
+      "enabled": true
+    },
+    "shopee_mall": {
+      "display_name": "蝦皮商城 (聯盟網)",
+      "base_redirect_url": "https://aftck.com/track/clicks/5282/c627c2bc980823defe8cec23d62e9640206b4ddf2aabebf10568b013234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.06,
+      "enabled": true
+    },
+    "rakuten": {
+      "display_name": "台灣樂天市場",
+      "base_redirect_url": "https://tlcafftrax.com/track/clicks/9379/c627c2bc9b0426dbfd8aec23d62e9640206b4ddf2aabebfd0467bb13234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.05,
+      "enabled": true
+    },
+    "pinkoi": {
+      "display_name": "Pinkoi 設計館",
+      "base_redirect_url": "https://affckr.site/track/clicks/5686/c627c2bc9b0426dbfd8bec23d62e9640206b4ddf2aabebf10168b413234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.04,
+      "enabled": true
+    },
+    "agoda": {
+      "display_name": "Agoda 訂房",
+      "base_redirect_url": "https://affclkr.online/track/clicks/8682/c627c2bc9b0127ddfe8dec23d62e9640206b4ddf2aabefc0168b013234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.06,
+      "enabled": true
+    },
+    "klook": {
+      "display_name": "Klook 客路",
+      "base_redirect_url": "https://tlcafftrax.com/track/clicks/3731/c627c2bc980521dffb8bec23d62e9640206b4ddf2aabebf70063b313234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.05,
+      "enabled": true
+    },
+    "kkday": {
+      "display_name": "KKday 體驗",
+      "base_redirect_url": "https://vbshoptrax.com/track/clicks/2652/c627c2bc980227ddfb8aec23d62e9640206b4ddf2aabebf60165b013234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.04,
+      "enabled": true
+    },
+    "udemy": {
+      "display_name": "Udemy 線上課程",
+      "base_redirect_url": "https://afftck.site/track/clicks/4546/c627c2bc9b0127ddf18cec23d62e9640206b4ddf2aabebf00264b413234652eed671a3ea103a9e71?t=",
+      "default_commission": 0.10,
+      "enabled": true
+    }
+  }
+}
