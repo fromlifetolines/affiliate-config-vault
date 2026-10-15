@@ -1,6 +1,6 @@
 {
-  "version": "2026.10.8",
-  "updated_at": "2026-10-15T10:15:00Z",
+  "version": "2026.10.15.affiliate-1",
+  "updated_at": "2026-10-15T08:30:06Z",
   "platforms": {
     "shopee": {
       "display_name": "蝦皮購物",
@@ -47,7 +47,25 @@
     "udemy": {
       "display_name": "Udemy 線上課程",
       "base_redirect_url": "https://afftck.site/track/clicks/4546/c627c2bc9b0127ddf18cec23d62e9640206b4ddf2aabebf00264b413234652eed671a3ea103a9e71?t=",
-      "default_commission": 0.10,
+      "default_commission": 0.1,
+      "enabled": true
+    },
+    "yahoo": {
+      "display_name": "Yahoo 購物中心",
+      "base_redirect_url": "https://twcouponcenter.com/track/clicks/3416/c627c2bc9b0426dbf18cec23d62e9640206b4ddf2aabebf70361b413234652eed671a3ea103a9e71?t=",
+      "target_encoding_depth": 2,
+      "enabled": true
+    },
+    "coupang": {
+      "display_name": "Coupang 酷澎",
+      "base_redirect_url": "https://affone.site/track/clicks/9197/c627c2bc9b0426dbf18dec23d62e9640206b4ddf2aabebfd0669b513234652eed671a3ea103a9e71?t=",
+      "target_encoding_depth": 2,
+      "enabled": true
+    },
+    "trip": {
+      "display_name": "Trip.com 訂房",
+      "base_redirect_url": "https://abzcoupon.com/track/clicks/3569/c627c2bc9b0127ddfe8aec23d62e9640206b4ddf2aabebf70266bb13234652eed671a3ea103a9e71?t=",
+      "target_encoding_depth": 2,
       "enabled": true
     }
   }
